@@ -10,6 +10,8 @@ export class ProductService {
 
   private _albumUrl = "../assets/album.json";
 
+  _productsUrl: string = "../assets/products.json";
+
   constructor(private _http: Http) { }
 
   getAlbum(id: number): Observable<Album> {
